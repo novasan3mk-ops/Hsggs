@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070b11" />
+  <meta name="description" content="إشارة — نموذج ابتكاري لجهاز ذكاء اصطناعي قابل للارتداء يهدف إلى تسهيل التواصل بلغة الإشارة محليًا وبدون اعتماد دائم على الهاتف أو الإنترنت." />
+  <title>إشارة | ESHARA — تواصل بلا حواجز</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="العودة إلى أعلى الصفحة">
+        <span class="brand-mark" aria-hidden="true">إ</span>
+        <span class="brand-copy"><strong>إشارة</strong><small>ESHARA</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#problem">المشكلة</a>
+        <a href="#ibdaa">ملف إبداع</a>
+        <a href="#how">كيف يعمل</a>
+        <a href="#engineering">الهندسة</a>
+        <a href="#demo">النموذج الحي</a>
+        <a href="#impact">الأثر</a>
+      </nav>
+
+      <a class="button button-small button-primary nav-cta" href="#demo">شاهد النموذج</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section shell" id="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> مشروع هندسي مُهيأ لمتطلبات إبداع</div>
+        <h1>ليس مترجمًا فقط.<br /><span>بل مساحة تواصل مستقلة.</span></h1>
+        <p class="hero-lead">
+          <strong>إشارة</strong> مفهوم لجهاز ذكاء اصطناعي يُرتدى على الرأس؛ تُرفع كاميرته الصغيرة للأمام لتلتقط مساحة التواصل من أعلى الشعر إلى فوق السرة، بينما تبقى وحدة المعالجة والبطارية خلف الكاب لتحقيق توازن أفضل وخصوصية أعلى.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#engineering">استكشف التصميم الهندسي</a>
+          <button class="button button-ghost" id="soonButton" type="button">شاهد إشارة في الحياة الواقعية</button>
+        </div>
+
+        <div class="project-classification" aria-label="تصنيف المشروع"><span>المجال المقترح</span><strong>الأنظمة المدمجة · EBED</strong><small>التصنيف النهائي يُراجع قبل التسجيل</small></div>
+
+        <div class="trust-strip" aria-label="خصائص المشروع">
+          <div><strong>محلي</strong><span>معالجة على الجهاز</span></div>
+          <div><strong>مستقل</strong><span>بدون اعتماد دائم على الجوال</span></div>
+          <div><strong>خصوصي</strong><span>الفيديو لا يغادر الجهاز في التصور الهندسي</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="100">
+        <div class="product-orbit" aria-hidden="true"></div>
+        <div class="product-stage glass-card">
+          <img
+            src="https://media.base44.com/images/public/6a9ecd750c32ce57385cb5f1/cbb416474_generated_image.png"
+            alt="تصور مبدئي لجهاز إشارة المثبت خلف الكاب مع ذراع كاميرا أمامية"
+            class="hero-product"
+          />
+          <div class="scan-line" aria-hidden="true"></div>
+          <div class="callout callout-camera"><span></span><b>كاميرا الرؤية</b><small>مجال رؤية كامل للتواصل</small></div>
+          <div class="callout callout-core"><span></span><b>وحدة المعالجة</b><small>خلف الكاب لتخفيف الواجهة</small></div>
+          <div class="live-pill"><i></i> تصميم مفاهيمي V2</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics shell reveal" aria-label="أهداف هندسية أولية">
+      <article><span>01</span><strong>&lt; 50 ms</strong><p>هدف زمن الاستدلال بعد ضغط النموذج وتحسينه على عتاد Edge AI.</p></article>
+      <article><span>02</span><strong>160°</strong><p>هدف لزاوية رؤية واسعة تقلل خروج اليدين من مجال الكاميرا.</p></article>
+      <article><span>03</span><strong>Offline-first</strong><p>الأولوية لمعالجة الإشارات محليًا لحماية الخصوصية وتقليل الاعتماد على الشبكة.</p></article>
+      <article><span>04</span><strong>Hands-free</strong><p>تصميم يُرتدى ويعمل دون حمل هاتف أثناء الحوار.</p></article>
+    </section>
+
+    <section class="section shell split" id="problem">
+      <div class="section-heading reveal">
+        <span class="kicker">المشكلة الحقيقية</span>
+        <h2>الحاجز ليس الصمت؛<br />الحاجز هو أن أدوات التواصل ما زالت تطلب من المستخدم أن يتكيّف معها.</h2>
+      </div>
+      <div class="problem-grid reveal" data-delay="100">
+        <article class="problem-card"><b>01</b><h3>الاعتماد على طرف ثالث</h3><p>قد يحتاج الشخص إلى مترجم بشري أو هاتف أو كتابة متكررة، وهذا يقلل سرعة واستقلالية الحوار.</p></article>
+        <article class="problem-card"><b>02</b><h3>انقطاع السياق</h3><p>حركة اليد وحدها لا تكفي دائمًا؛ موضع اليد بالنسبة للوجه والجسم وتعبير الوجه عناصر مهمة في الفهم.</p></article>
+        <article class="problem-card"><b>03</b><h3>الخصوصية والاتصال</h3><p>إرسال الفيديو إلى خوادم خارجية يرفع حساسية الخصوصية، كما أن الاتصال بالإنترنت ليس متاحًا دائمًا.</p></article>
+        <article class="problem-card accent-card"><b>الحل</b><h3>رؤية من منظور المستخدم</h3><p>كاميرا مرفوعة على الرأس ترى مساحة الإشارة كاملة، مع معالجة محلية وواجهة صوتية بسيطة.</p></article>
+      </div>
+    </section>
+
+
+
+    <section class="section shell ibdaa-section" id="ibdaa">
+      <div class="section-heading centered reveal">
+        <span class="kicker">ملف إبداع العلمي</span>
+        <h2>حوّلنا «إشارة» من فكرة منتج إلى مشروع هندسي قابل للتحكيم.</h2>
+        <p>هذه الصياغة تنظّم المشروع حول مشكلة محددة، سؤال هندسي قابل للاختبار، معايير نجاح كمية، منهجية، أخلاقيات، ومكان واضح للنتائج الحقيقية فقط.</p>
+      </div>
+
+      <div class="ibdaa-identity reveal" data-delay="80">
+        <article class="ibdaa-title-card">
+          <span>العنوان العلمي المقترح</span>
+          <h3>إشارة: نظام مدمج قابل للارتداء للتعرّف المحلي على إشارات عربية مرئية باستخدام الرؤية الحاسوبية والذكاء الاصطناعي</h3>
+          <p>يجب أن يبقى هذا العنوان متطابقًا في التسجيل، الملخص، الخطة، ولوحة العرض ما لم يتم تعديل المشروع رسميًا قبل التحكيم.</p>
+        </article>
+        <article><span>نوع المشروع</span><strong>تصميم هندسي / ابتكار</strong><p>بناء نموذج أولي واختباره بمعايير أداء واضحة.</p></article>
+        <article><span>المجال المقترح</span><strong>الأنظمة المدمجة EBED</strong><p>لأن جوهر المشروع هو دمج كاميرا ومعالجة Edge AI وطاقة وواجهة إخراج في جهاز قابل للارتداء. راجع التصنيف النهائي مع المشرف قبل تثبيته.</p></article>
+        <article><span>حالة الادعاءات</span><strong>أهداف حتى تُقاس</strong><p>أي رقم غير مختبر يبقى هدفًا هندسيًا ولا يُعرض كحقيقة أو نتيجة نهائية.</p></article>
+      </div>
+
+      <div class="research-question-grid reveal">
+        <article class="research-card primary">
+          <span>السؤال الهندسي</span>
+          <h3>هل يؤدي رفع موضع الكاميرا من الصدر إلى أعلى الرأس إلى زيادة بقاء اليدين داخل مجال الرؤية وتحسين ثبات التعرّف، مع الحفاظ على زمن استجابة مناسب ومعالجة محلية؟</h3>
+        </article>
+        <article class="research-card">
+          <span>الهدف</span>
+          <p>تصميم نموذجين متكافئين في الكاميرا والخوارزمية، يختلفان في موضع التثبيت فقط، ثم مقارنة الأداء كمّيًا.</p>
+        </article>
+        <article class="research-card">
+          <span>الفرضية الهندسية</span>
+          <p>الموضع المرتفع سيزيد نسبة الإطارات التي تبقى فيها اليدان ظاهرتين، ويقلل فقد التتبع مقارنة بالتثبيت الصدري دون زيادة جوهرية في زمن الاستدلال.</p>
+        </article>
+        <article class="research-card">
+          <span>نقطة الابتكار المراد إثباتها</span>
+          <p>دمج زاوية رؤية مرتفعة قابلة للضبط مع معالجة محلية وواجهة قابلة للارتداء. لا تُوصف بأنها «غير مسبوقة» إلا بعد بحث براءات ومنتجات وأبحاث مشابهة وتوثيق الفارق.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experiment-section" id="methodology">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="kicker">المنهجية التجريبية</span>
+          <h2>اختبار A/B واضح: الصدر مقابل الرأس.</h2>
+          <p>نفس الكاميرا، نفس الدقة، نفس نموذج التعرّف، ونفس الإشارات. المتغير الوحيد الأساسي هو موضع الكاميرا.</p>
+        </div>
+
+        <div class="ab-compare reveal" data-delay="80">
+          <article class="ab-card baseline">
+            <div class="ab-label">A · خط الأساس</div>
+            <div class="camera-schematic chest"><span class="head-dot"></span><span class="body-line"></span><span class="camera-dot"></span><i></i></div>
+            <h3>تثبيت صدري</h3>
+            <p>النسخة المرجعية للمقارنة. يُسجّل عدد مرات خروج اليد من الإطار وفقد نقاط التتبع.</p>
+          </article>
+          <div class="vs-chip">VS</div>
+          <article class="ab-card prototype">
+            <div class="ab-label">B · إشارة V2</div>
+            <div class="camera-schematic head"><span class="head-dot"></span><span class="body-line"></span><span class="camera-dot"></span><i></i></div>
+            <h3>تثبيت أعلى الرأس</h3>
+            <p>النسخة المقترحة. تُقاس بنفس المهمة والشروط ثم تُقارن مباشرة بخط الأساس.</p>
+          </article>
+        </div>
+
+        <div class="method-grid reveal">
+          <article><span>01</span><h3>تثبيت المتغيرات</h3><p>نفس الكاميرا، الدقة، الإضاءة، المسافة، قاموس الإشارات، إعدادات MediaPipe/النموذج، والجهاز الحاسوبي.</p></article>
+          <article><span>02</span><h3>مهمة موحدة</h3><p>تنفيذ مجموعة إشارات ثابتة ومتحركة بعدد تكرارات متساوٍ لكل وضع تثبيت، وبعد الحصول على أي موافقات لازمة للمشاركين.</p></article>
+          <article><span>03</span><h3>تسجيل القياسات</h3><p>نسبة ظهور اليدين، فقد التتبع، دقة التصنيف، زمن الاستدلال، FPS، حرارة الوحدة، واستهلاك الطاقة.</p></article>
+          <article><span>04</span><h3>فصل التدريب عن الاختبار</h3><p>إذا تم تدريب نموذج، يجب ألا يظهر الشخص نفسه في بيانات التدريب والاختبار عند قياس القدرة على التعميم.</p></article>
+          <article><span>05</span><h3>تحليل النتائج</h3><p>حساب المتوسط والانحراف والتغير النسبي بين A وB، مع عرض الحالات التي يفشل فيها النظام وليس أفضل الحالات فقط.</p></article>
+          <article><span>06</span><h3>قرار التصميم</h3><p>اعتماد موضع الرأس فقط إذا حقق تحسنًا قابلًا للقياس مع راحة وسلامة مقبولتين، وإلا يعاد التصميم.</p></article>
+        </div>
+
+        <div class="success-criteria reveal">
+          <div class="criteria-head"><span class="kicker">معايير النجاح</span><h3>الأرقام هنا «طريقة قياس» وليست نتائج جاهزة.</h3></div>
+          <div class="criteria-table" role="table" aria-label="معايير تقييم المشروع">
+            <div class="criteria-row header" role="row"><span>المعيار</span><span>طريقة القياس</span><span>النتيجة الحالية</span></div>
+            <div class="criteria-row" role="row"><strong>بقاء اليدين داخل الإطار</strong><span>إطارات اليدين المرئيتين ÷ إجمالي إطارات المهمة</span><b class="pending">لم تُقَس بعد</b></div>
+            <div class="criteria-row" role="row"><strong>دقة التعرّف</strong><span>الإشارات المصنفة صحيحًا ÷ جميع محاولات الاختبار</span><b class="pending">لم تُقَس بعد</b></div>
+            <div class="criteria-row" role="row"><strong>زمن الاستدلال</strong><span>مللي ثانية لكل إطار على العتاد المستهدف</span><b class="pending">لم تُقَس بعد</b></div>
+            <div class="criteria-row" role="row"><strong>الحرارة والطاقة</strong><span>درجة حرارة الوحدة واستهلاك/عمر البطارية تحت حمل ثابت</span><b class="pending">لم تُقَس بعد</b></div>
+            <div class="criteria-row" role="row"><strong>الراحة</strong><span>اختبار استخدام منظم بعد الموافقات المطلوبة إن شمل مشاركين</span><b class="pending">لم تُقَس بعد</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell abstract-section" id="abstract">
+      <div class="abstract-card reveal">
+        <div class="abstract-head">
+          <div><span class="kicker">مسودة ملخص المشروع</span><h2>صياغة للتحكيم الإلكتروني — قبل إضافة النتائج النهائية.</h2></div>
+          <button class="button button-ghost" id="copyAbstract" type="button">نسخ الملخص</button>
+        </div>
+        <p id="abstractText">يهدف مشروع «إشارة» إلى تطوير نظام مدمج قابل للارتداء يستخدم الرؤية الحاسوبية والذكاء الاصطناعي المحلي للتعرّف على إشارات عربية مرئية وتحويل ناتج التعرّف إلى مخرجات قابلة للتواصل. تنطلق المشكلة الهندسية من محدودية بعض حلول الترجمة البصرية عندما تخرج اليدان من مجال الكاميرا أو تعتمد المنظومة على هاتف أو معالجة سحابية. يقترح المشروع نقل الكاميرا من موضع صدري إلى موضع مرتفع أعلى الرأس بواسطة ذراع خفيف قابل للضبط، مع وضع وحدة المعالجة والطاقة خلف الكاب. ستتم مقارنة تصميمين يستخدمان الكاميرا والخوارزمية نفسيهما ويختلفان في موضع التثبيت فقط. تشمل مؤشرات القياس نسبة بقاء اليدين داخل الإطار، فقد التتبع، دقة تصنيف قاموس إشارات محدد، زمن الاستدلال، استهلاك الطاقة، والحرارة. وفي حال جمع بيانات من مشاركين، لن تبدأ عملية الجمع قبل استكمال الموافقات الأخلاقية والنماذج المطلوبة، كما ستُفصل بيانات التدريب عن الاختبار لتقييم التعميم. النموذج البرمجي الحالي يثبت إمكانية تتبع اليد وتصنيف مجموعة محدودة من الأشكال الثابتة داخل المتصفح، ولا يمثل ترجمة كاملة للغة الإشارة. ستُحدّث هذه المسودة بعد تنفيذ التجارب بإضافة النتائج الرقمية والاستنتاج المبني عليها فقط.</p>
+        <div class="abstract-warning">لا ترفع هذه المسودة كملخص نهائي قبل إجراء التجارب. ملخص إبداع النهائي يجب أن يعكس ما نُفّذ فعليًا وما نتج عنه.</div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <span class="kicker">كيف يعمل إشارة</span>
+          <h2>من الحركة إلى معنى مفهوم — في أربع طبقات.</h2>
+          <p>التصميم لا يعتمد على شكل اليد فقط؛ بل يفصل الرؤية، التتبّع، التعرّف، ثم الإخراج الصوتي.</p>
+        </div>
+
+        <div class="flow-grid reveal" data-delay="100">
+          <article><span class="flow-number">1</span><div class="flow-icon">◉</div><h3>التقاط</h3><p>الكاميرا تلتقط اليدين والوجه وأعلى الجسم داخل إطار واحد.</p></article>
+          <article><span class="flow-number">2</span><div class="flow-icon">⌁</div><h3>تتبّع</h3><p>استخراج نقاط اليد والحركة والموقع بالنسبة للرأس والصدر.</p></article>
+          <article><span class="flow-number">3</span><div class="flow-icon">AI</div><h3>تعرّف</h3><p>نموذج مُدرّب يصنّف الإشارة أو تسلسل الإشارات اعتمادًا على الزمن والسياق.</p></article>
+          <article><span class="flow-number">4</span><div class="flow-icon">)))</div><h3>تواصل</h3><p>تحويل النتيجة إلى صوت أو نص واضح، مع إمكانية استقبال رد الطرف الآخر مستقبلًا.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="engineering">
+      <div class="section-heading reveal">
+        <span class="kicker">التصميم الهندسي V2</span>
+        <h2>غيّرنا مكان الجهاز لأن زاوية الرؤية أهم من شكل الغلاف.</h2>
+        <p>بدل تثبيت الكاميرا على الصدر، ينقل التصميم الجديد الكاميرا إلى ذراع علوية ويُخفي المكوّنات الأكبر خلف الكاب.</p>
+      </div>
+
+      <div class="showcase reveal" data-delay="100">
+        <div class="showcase-toolbar">
+          <div class="segmented" role="tablist" aria-label="طريقة عرض المنتج">
+            <button class="segment active" data-view="external" role="tab" aria-selected="true">المنظر الخارجي</button>
+            <button class="segment" data-view="exploded" role="tab" aria-selected="false">التفكيك الهندسي</button>
+          </div>
+          <span class="prototype-note">تصور صناعي قابل للتطوير</span>
+        </div>
+
+        <div class="showcase-body">
+          <div class="product-image-wrap">
+            <img id="productView" src="https://media.base44.com/images/public/6a9ecd750c32ce57385cb5f1/b44bf15a1_generated_image.png" alt="المنظر الخارجي المقترح لجهاز إشارة" />
+          </div>
+          <div class="spec-list" id="specList">
+            <article><span>01</span><div><h3>ذراع كاميرا خفيف</h3><p>يُضبط ليحافظ على رؤية اليدين والوجه دون أن يحجب مجال نظر المستخدم.</p></div></article>
+            <article><span>02</span><div><h3>وحدة خلفية متوازنة</h3><p>المعالج والبطارية خلف الكاب لتوزيع الوزن وتقليل البروز أمام الرأس.</p></div></article>
+            <article><span>03</span><div><h3>خصوصية مادية</h3><p>مؤشر ضوئي واضح عند تشغيل الكاميرا، مع مفتاح تعطيل فعلي مقترح للنموذج النهائي.</p></div></article>
+            <article><span>04</span><div><h3>تركيب قابل للفك</h3><p>مشبك مرن يسمح باستخدام الجهاز مع أكثر من نوع كاب بدل تصميم قبعة خاصة.</p></div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="engineering-grid reveal">
+        <article class="engineering-card featured">
+          <span class="card-tag">الرؤية</span><h3>مجال رؤية مصمم للإشارة</h3><p>الهدف تغطية مساحة من فوق الشعر إلى فوق السرة، ما يرفع فرصة بقاء اليدين وتعبيرات الوجه داخل الإطار أثناء الحوار.</p><div class="mini-meter"><span style="width:92%"></span></div>
+        </article>
+        <article class="engineering-card"><span class="card-tag">الذكاء</span><h3>Edge NPU</h3><p>تشغيل نموذج التعرّف على عتاد مخصص للذكاء الاصطناعي بدل الاعتماد على معالجة سحابية دائمة.</p></article>
+        <article class="engineering-card"><span class="card-tag">الخصوصية</span><h3>Local-first</h3><p>التصميم المقترح يعالج إطارات الكاميرا داخل الجهاز ولا يحتاج حفظ الفيديو لتأدية وظيفته الأساسية.</p></article>
+        <article class="engineering-card"><span class="card-tag">الطاقة</span><h3>إدارة ذكية للطاقة</h3><p>تشغيل الاستدلال فقط عند وجود حركة وإيقاف بعض الوحدات عند الخمول لتقليل الاستهلاك.</p></article>
+        <article class="engineering-card"><span class="card-tag">السلامة</span><h3>Camera-in-use LED</h3><p>مؤشر مرئي لا يمكن تعطيله برمجيًا في التصور النهائي حتى يعرف المحيطون أن الكاميرا نشطة.</p></article>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <span class="kicker">مختبر الإشارة الحي — Prototype</span>
+          <h2>الكاميرا لا تتتبّع اليد فقط؛ بل تحاول فهم شكل الإشارة.</h2>
+          <p>أضفنا تعرّفًا تجريبيًا داخل المتصفح لستة أحرف ثابتة: <strong>أ، ب، ت، ث، ل، ي</strong>. هذا نموذج أولي للتصنيف الشكلي وليس مترجمًا كاملًا للغة الإشارة؛ الإشارات الحركية والجمل تحتاج بيانات زمنية والوجه والجسم.</p>
+        </div>
+
+        <div class="demo-shell reveal" data-delay="100">
+          <div class="demo-camera">
+            <video id="webcam" autoplay playsinline muted></video>
+            <canvas id="outputCanvas"></canvas>
+            <div class="camera-grid" aria-hidden="true"></div>
+            <div class="camera-status" id="cameraStatus"><span></span> الكاميرا متوقفة</div>
+
+            <div class="recognition-badge" id="recognitionBadge" aria-live="polite">
+              <span class="recognition-letter" id="recognitionLetter">—</span>
+              <div class="recognition-copy">
+                <small>STATIC SIGN MATCH</small>
+                <strong id="recognitionConfidence">0%</strong>
+                <div class="confidence-track"><span id="confidenceBar"></span></div>
+              </div>
+            </div>
+
+            <div class="tracking-result" id="trackingResult">
+              <small>ESHARA VISION</small>
+              <strong>جاهز للتدريب</strong>
+              <p>اختر المستوى، شغّل الكاميرا، ثم جرّب الحرف المطلوب.</p>
+            </div>
+          </div>
+
+          <div class="demo-panel">
+            <div class="privacy-chip">🔒 المعالجة داخل المتصفح أثناء هذا العرض</div>
+
+            <div class="session-metrics" aria-label="قياسات الجلسة الحالية">
+              <div><span>إطارات معالجة</span><strong id="sessionFrames">0</strong></div>
+              <div><span>إطارات رُصدت فيها يد</span><strong id="handFrames">0</strong></div>
+              <div><span>نسبة الرصد</span><strong id="detectionRate">0%</strong></div>
+              <div><span>زمن الاستدلال</span><strong id="inferenceTime">— ms</strong></div>
+            </div>
+
+            <div class="training-card">
+              <div class="training-topline"><span>وضع التدريب</span><b id="difficultyLabel">مبتدئ</b></div>
+              <div class="difficulty-switch" role="group" aria-label="مستوى صعوبة التعرف">
+                <button class="difficulty active" data-level="easy" type="button">مبتدئ</button>
+                <button class="difficulty" data-level="medium" type="button">متوسط</button>
+                <button class="difficulty" data-level="hard" type="button">تحدّي</button>
+              </div>
+              <div class="target-sign">
+                <span>الحرف المطلوب</span>
+                <strong id="targetSign">أ</strong>
+                <p id="targetHint">ارفع الإبهام وأغلق بقية الأصابع.</p>
+              </div>
+              <button class="mini-action" id="nextTarget" type="button">حرف آخر ←</button>
+            </div>
+
+            <h3>ماذا يتعرّف عليه الآن؟</h3>
+            <ul>
+              <li><i></i>أشكال ثابتة أولية للحروف: أ، ب، ت، ث، ل، ي.</li>
+              <li><i></i>تثبيت النتيجة عبر عدة إطارات لتقليل القفز بين الحروف.</li>
+              <li><i></i>درجة مطابقة شكلية تتغيّر حسب مستوى الصعوبة.</li>
+            </ul>
+            <button class="button button-primary full" id="startCamera" type="button">تشغيل الكاميرا والتعرّف</button>
+            <button class="button button-ghost full" id="stopCamera" type="button" disabled>إيقاف الكاميرا</button>
+            <p class="demo-footnote">أفضل نتيجة: يد واحدة واضحة، إضاءة أمامية، وكف كامل داخل الإطار. يحتاج المتصفح HTTPS أو localhost للوصول للكاميرا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="impact">
+      <div class="section-heading reveal">
+        <span class="kicker">لماذا قد يختاره الناس؟</span>
+        <h2>لأنه لا يطلب من المستخدم أن يوقف حياته كي يتواصل.</h2>
+      </div>
+
+      <div class="impact-grid reveal" data-delay="100">
+        <article><span>🏛️</span><h3>الخدمات الحكومية</h3><p>هدف المشروع هو تقليل الحاجة لطرف ثالث في المواقف التي تتطلب خصوصية واستقلالية.</p></article>
+        <article><span>🩺</span><h3>الصحة والطوارئ</h3><p>تواصل أسرع قد يساعد على شرح الاحتياج الأساسي في اللحظات التي لا تحتمل تأخيرًا.</p></article>
+        <article><span>🎓</span><h3>التعليم والعمل</h3><p>تصور لجهاز يمكنه البقاء مع المستخدم طوال اليوم بدل فتح تطبيق عند كل محادثة.</p></article>
+        <article><span>🛍️</span><h3>التسوق والخدمات</h3><p>تجربة أكثر طبيعية عند الطلب والسؤال والدفع والتفاعل اليومي مع أي شخص.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="readiness reveal">
+        <div>
+          <span class="kicker">خطة التحويل من فكرة إلى منتج</span>
+          <h2>القوة ليست في كثرة المزايا؛ بل في إثبات كل مرحلة.</h2>
+        </div>
+        <div class="roadmap">
+          <article><b>المرحلة 1</b><h3>إثبات الرؤية</h3><p>تتبّع اليد والوجه والجسم بزمن حقيقي وتحديد زاوية الكاميرا المثلى.</p></article>
+          <article><b>المرحلة 2</b><h3>بيانات لغة الإشارة</h3><p>جمع بيانات بموافقة المشاركين وتحت إشراف متخصصين في لغة الإشارة.</p></article>
+          <article><b>المرحلة 3</b><h3>نموذج الترجمة</h3><p>تدريب واختبار النموذج على متحدثين مختلفين وقياس الدقة والانحياز وزمن الاستجابة.</p></article>
+          <article><b>المرحلة 4</b><h3>عتاد قابل للارتداء</h3><p>دمج الكاميرا والمعالج والطاقة، ثم اختبارات الراحة والحرارة والبطارية والخصوصية.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell feasibility-section" id="feasibility">
+      <div class="section-heading centered reveal">
+        <span class="kicker">السهولة × الصعوبة × العقبات</span>
+        <h2>نقسّم التحدي بدل ما نقول «الذكاء الاصطناعي يسوي كل شيء».</h2>
+        <p>كل طبقة في إشارة لها مستوى مختلف من الصعوبة. هذا التقسيم يوضح للجنة ما يمكن إثباته الآن، وما يحتاج بحثًا وتطويرًا لاحقًا.</p>
+      </div>
+
+      <div class="difficulty-grid reveal" data-delay="100">
+        <article class="difficulty-card easy-card">
+          <div class="level-head"><span>01</span><b>أسهل نسبيًا</b></div>
+          <h3>الرؤية والتتبّع</h3>
+          <p>اكتشاف اليد ومفاصل الأصابع في إضاءة جيدة أصبح ممكنًا بأدوات رؤية جاهزة، ويمكن إثباته مباشرة في المتصفح.</p>
+          <div class="level-meter"><span style="width:88%"></span></div>
+          <small>جاهزية النموذج الأولي: مرتفعة</small>
+        </article>
+        <article class="difficulty-card medium-card">
+          <div class="level-head"><span>02</span><b>متوسط</b></div>
+          <h3>حروف وكلمات محددة</h3>
+          <p>يمكن تدريب نموذج على قاموس محدود، لكن يلزم تصوير أشخاص مختلفين وزوايا وإضاءات متعددة حتى لا يحفظ النموذج شخصًا واحدًا.</p>
+          <div class="level-meter"><span style="width:62%"></span></div>
+          <small>يحتاج بيانات واختبارات دقة</small>
+        </article>
+        <article class="difficulty-card hard-card">
+          <div class="level-head"><span>03</span><b>تحدّي حقيقي</b></div>
+          <h3>لغة كاملة وجمل طبيعية</h3>
+          <p>المعنى قد يعتمد على الحركة عبر الزمن، تعبير الوجه، اتجاه الجسم والسياق؛ لذلك لا تكفي صورة يد واحدة أو قواعد بسيطة.</p>
+          <div class="level-meter"><span style="width:34%"></span></div>
+          <small>يحتاج نموذجًا زمنيًا ومجموعة بيانات متخصصة</small>
+        </article>
+      </div>
+
+      <div class="obstacle-board reveal">
+        <div class="obstacle-intro"><span class="kicker">العقبات الرئيسية</span><h3>كل عقبة أمامها خطة هندسية، مو مجرد وعد.</h3></div>
+        <div class="obstacle-list">
+          <article><b>اختفاء اليد خلف الجسم</b><p>مجال رؤية أوسع + تدريب على لقطات فيها حجب جزئي + تنبيه المستخدم إذا خرجت اليد من الإطار.</p></article>
+          <article><b>تشابه بعض الحروف</b><p>استخدام الحركة لعدة إطارات وموقع اليد بالنسبة للوجه والجسم بدل الاعتماد على شكل الأصابع فقط.</p></article>
+          <article><b>اختلاف المستخدمين</b><p>بيانات من أعمار وأحجام يد وإضاءات مختلفة، وتقسيم اختبار لا يحتوي الأشخاص الموجودين في التدريب.</p></article>
+          <article><b>اللهجات الإشارية</b><p>تحديد النسخة الأولى بلغة/لهجة إشارية واضحة، ثم إضافة حزم لغوية منفصلة بدل خلطها في نموذج واحد.</p></article>
+          <article><b>الحرارة والبطارية</b><p>نموذج مضغوط + معالج Edge منخفض الطاقة + تشغيل ذكي عند وجود حركة فعلية فقط.</p></article>
+          <article><b>الخصوصية</b><p>معالجة محلية، عدم حفظ الفيديو افتراضيًا، ومؤشر مادي واضح عند تشغيل الكاميرا.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="risk-grid reveal">
+        <div class="section-heading compact"><span class="kicker">المخاطر والحلول</span><h2>نظهر للجنة أننا نعرف التحديات قبل أن تسأل عنها.</h2></div>
+        <div class="risk-list">
+          <article><h3>اختلاف اللهجات الإشارية</h3><p>الحل: تحديد نطاق لغوي واضح في النسخة الأولى وبناء مجموعات بيانات محلية.</p></article>
+          <article><h3>الخصوصية الاجتماعية</h3><p>الحل: معالجة محلية + مؤشر تشغيل واضح + زر تعطيل مادي للكاميرا.</p></article>
+          <article><h3>الحرارة والوزن</h3><p>الحل: توزيع المكونات خلف الرأس، ومعالج منخفض الطاقة، وتجارب راحة قبل تثبيت التصميم الصناعي.</p></article>
+          <article><h3>الدقة في الإشارات المتشابهة</h3><p>الحل: استخدام تسلسل زمني وسياق الوجه والجسم بدل الاعتماد على لقطة يد واحدة.</p></article>
+          <article><h3>خروج اليد من مجال الرؤية</h3><p>الحل: عدسة أوسع، ذراع كاميرا قابل للضبط، وتنبيه فوري عندما تقل جودة التتبع.</p></article>
+          <article><h3>نقص بيانات التدريب المحلية</h3><p>الحل: جمع بيانات بموافقة المشاركين وبإشراف مختصين، مع فصل بيانات التدريب والاختبار بشكل صارم.</p></article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section shell compliance-section" id="compliance">
+      <div class="section-heading reveal">
+        <span class="kicker">الأخلاقيات والنماذج</span>
+        <h2>قبل تصوير أشخاص للتدريب: الموافقات أولًا، البيانات ثانيًا.</h2>
+        <p>هذه القائمة تنظّم الجانب البحثي للمشروع. النماذج الفعلية وتحديد ما يلزم منها يجب أن يراجعه المشارك والمشرف ولجنة SRC حسب طريقة تنفيذ التجارب.</p>
+      </div>
+
+      <div class="eligibility-strip reveal" aria-label="شروط تسجيل يجب على المشارك التحقق منها">
+        <span>تحقق قبل التسجيل الرسمي</span>
+        <b>مشاركة فردية · مشروع واحد فقط · طالب/ـة سعودي/ـة من المتوسطة أو الثانوية · العمر ضمن الفئة الرسمية للموسم</b>
+        <small>هذه متطلبات على المشارك نفسه وليست شيئًا يمكن للموقع إثباته.</small>
+      </div>
+
+      <div class="compliance-grid reveal" data-delay="80">
+        <article class="compliance-card required"><span>إلزامي لكل مشروع</span><h3>1 · 1A · 1B</h3><p>مراجعة المشرف، قائمة المشارك وخطة المشروع، ونموذج الموافقة. تُستكمل التواقيع والتواريخ بالطريقة الرسمية.</p></article>
+        <article class="compliance-card warning"><span>إذا شملت الدراسة أشخاصًا</span><h3>نموذج 4 + موافقة مسبقة</h3><p>جمع فيديوهات لغة إشارة، اختبار الراحة، أو تجربة النظام على مشاركين قد يدخل ضمن العناصر البشرية؛ لا يبدأ جمع البيانات قبل الموافقة المطلوبة.</p></article>
+        <article class="compliance-card"><span>بحسب التنفيذ</span><h3>2 / 3 / 1C</h3><p>قد تحتاج نموذج المشرف الأكاديمي، تقييم المخاطر للأدوات أو الأنشطة الخطرة، أو نموذج جهة البحث المعتمدة إذا نُفذت التجارب في جهة بحثية.</p></article>
+        <article class="compliance-card"><span>نزاهة علمية</span><h3>لا بيانات مصطنعة</h3><p>لا نضع نسب دقة أو بطارية أو زمن استجابة كـ«نتائج» قبل قياسها. تُحفظ البيانات الخام وسجل التجارب لإمكانية المراجعة.</p></article>
+      </div>
+
+      <div class="data-ethics reveal">
+        <div><span class="kicker">خطة الخصوصية المقترحة</span><h3>أقل بيانات ممكنة.</h3></div>
+        <ul>
+          <li><b>النموذج الحي في الموقع:</b> لا يرفع الفيديو إلى خادم؛ المعالجة محلية داخل المتصفح.</li>
+          <li><b>بيانات البحث مستقبلًا:</b> تُجمع فقط بعد الموافقات، وبغرض محدد، وبأقل معلومات تعريفية ممكنة.</li>
+          <li><b>التخزين:</b> فصل هوية المشارك عن ملفات التدريب واستخدام رموز غير تعريفية عند الحاجة.</li>
+          <li><b>الذكاء الاصطناعي المساعد:</b> يُستخدم للمساعدة في الصياغة أو البرمجة مع مراجعة الطالب للمحتوى والمصادر، ولا يُستخدم لاختلاق نتائج أو نسب العمل إلى الطالب دون فهم وتنفيذ فعلي.</li>
+        </ul>
+      </div>
+
+      <div class="ibdaa-checklist reveal">
+        <div class="check-head"><span class="kicker">قائمة جاهزية إبداع</span><h3>ما الذي أصبح موجودًا وما الذي ما زال يحتاج عملًا فعليًا؟</h3></div>
+        <div class="check-items">
+          <div class="check ok"><i>✓</i><span><b>مشكلة وسؤال هندسي محددان</b><small>موجودان في الموقع.</small></span></div>
+          <div class="check ok"><i>✓</i><span><b>منهجية ومعايير قياس</b><small>موجودة ومربوطة بتجربة A/B.</small></span></div>
+          <div class="check ok"><i>✓</i><span><b>نموذج برمجي أولي</b><small>تتبع يد وتصنيف محدود دون ادعاء ترجمة كاملة.</small></span></div>
+          <div class="check pending"><i>!</i><span><b>إثبات الأصالة</b><small>يلزم بحث موثق في المنتجات، الأبحاث وبراءات الاختراع وتحديد الفرق بدقة.</small></span></div>
+          <div class="check pending"><i>!</i><span><b>النموذج الفيزيائي</b><small>يلزم نموذج مصغر/عامل عند إمكانية التطبيق، مع إبقاء نموذج العرض ضمن الحد الرسمي المنشور 50 × 40 × 20 سم.</small></span></div>
+          <div class="check pending"><i>!</i><span><b>النتائج التجريبية</b><small>لا تزال غير منفذة؛ يجب إجراء القياسات قبل تحويل الأهداف إلى نتائج.</small></span></div>
+          <div class="check pending"><i>!</i><span><b>النماذج والموافقات</b><small>تُستكمل حسب التجارب قبل البدء في أي إجراء يتطلب موافقة مسبقة.</small></span></div>
+          <div class="check pending"><i>!</i><span><b>مدونة المشروع ولوحة العرض</b><small>ابدأ سجلًا مؤرخًا لكل تعديل وتجربة، ثم ابنِ اللوحة من النتائج الفعلية.</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell references-section" id="references">
+      <div class="section-heading reveal">
+        <span class="kicker">الخلفية العلمية والمراجع</span>
+        <h2>المشروع يحتاج أن يوضح ما الذي سبقك وما الذي تضيفه أنت.</h2>
+      </div>
+      <div class="reference-list reveal">
+        <a href="https://www.mawhiba.org/discover-mawhiba/competitions/national-olympiad-for-scientific-creativity/" target="_blank" rel="noopener"><b>موهبة</b><span>الأولمبياد الوطني للإبداع العلمي — الشروط، النماذج، الأخلاقيات، والمجالات.</span></a>
+        <a href="https://doi.org/10.3390/s24237798" target="_blank" rel="noopener"><b>Alayed, 2024</b><span>مراجعة منهجية لعقد من أبحاث التعرف على لغة الإشارة العربية بالتعلم الآلي والعميق.</span></a>
+        <a href="https://doi.org/10.1016/j.ipm.2024.103774" target="_blank" rel="noopener"><b>Alyami et al., 2024</b><span>مراجعة 25 عامًا من التعرف المستمر على لغة الإشارة والتحديات الزمنية ومتعددة الإشارات.</span></a>
+        <a href="https://doi.org/10.1016/j.eswa.2021.115448" target="_blank" rel="noopener"><b>Qaroush et al., 2021</b><span>نظام قابل للارتداء للتعرف على لغة الإشارة العربية باستخدام مستشعرات حركة؛ مفيد للمقارنة مع المنهج البصري المقترح.</span></a>
+      </div>
+      <p class="reference-note">هذه ليست قائمة أصالة كاملة. قبل التسجيل، أضف بحث براءات اختراع ومنتجات تجارية وأبحاث مباشرة عن الكاميرات القابلة للارتداء ودوّن تاريخ البحث وكلمات البحث والفرق عن مشروعك.</p>
+    </section>
+
+
+    <section class="final-cta section">
+      <div class="shell final-inner reveal">
+        <span class="kicker">ESHARA / إشــارة</span>
+        <h2>التقنية الجيدة لا تتحدث بدل الإنسان.<br /><span>هي فقط تزيل ما يمنعه من أن يُسمَع.</span></h2>
+        <div class="hero-actions centered-actions">
+          <a class="button button-primary" href="#demo">جرّب نموذج الرؤية</a>
+          <a class="button button-ghost" href="#engineering">راجع التصميم</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <a class="brand" href="#top"><span class="brand-mark">إ</span><span class="brand-copy"><strong>إشارة</strong><small>ESHARA</small></span></a>
+      <p>مشروع ابتكاري — جميع الأرقام المعلّمة كأهداف هندسية تحتاج تحققًا عمليًا في النموذج النهائي.</p>
+      <span>© 2026 ESHARA</span>
+    </div>
+  </footer>
+
+  <button class="assistant-fab" id="assistantFab" aria-label="فتح مساعد إشارة"><span>AI</span></button>
+  <aside class="assistant-panel" id="assistantPanel" aria-hidden="true">
+    <div class="assistant-head"><div><small>ESHARA INTELLIGENCE</small><strong>مساعد إشارة</strong></div><button id="assistantClose" aria-label="إغلاق">×</button></div>
+    <div class="assistant-log" id="assistantLog"><div class="bot-message">أهلًا! اسألني عن الفكرة، طريقة العمل، الخصوصية، أو خطة النموذج الأولي.</div></div>
+    <div class="quick-questions">
+      <button data-q="كيف يعمل الجهاز؟">كيف يعمل؟</button>
+      <button data-q="هل يحتاج إنترنت؟">هل يحتاج إنترنت؟</button>
+      <button data-q="هل الترجمة جاهزة الآن؟">هل الترجمة جاهزة؟</button>
+      <button data-q="ما أصعب عقبات المشروع؟">ما أصعب العقبات؟</button>
+      <button data-q="ما سؤال المشروع في إبداع؟">سؤال إبداع</button>
+      <button data-q="ما النماذج المطلوبة؟">نماذج موهبة</button>
+    </div>
+    <form class="assistant-form" id="assistantForm"><input id="assistantInput" autocomplete="off" placeholder="اكتب سؤالك..." /><button aria-label="إرسال">←</button></form>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><strong>قريبًا</strong><span>نعمل على مقطع واقعي يوضح تجربة إشارة.</span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
